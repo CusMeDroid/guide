@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <meta charset='UTF-8'>
+        <title>Guide | JS LEVEL UP BASIC</title>
+        <link rel='icon' type='image/x-icon' href='https://cusmedroid.github.io/favicon.ico'>
+        <link rel='apple-touch-icon' href='https://cusmedroid.github.io/favicon.ico'>
+        <meta name='theme-color' content='#f4f4f4'/>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <meta name='description' content='Cusmedroid is an android studio application development project name. the name was created by iyortml alias suryo dwijayanto. Initially cusmedroid was a custom rom project on smartphone android, at that time in 2014 - 2015 cusmedroid was still looking for identity, until now - then cusmedroid will be the unique name of me who doesn’t have a team.'>
+        <meta name='keywords' content='cusmedroid, iyortml, learn php with cusmedroid, learn php with iyortml, cusmedroid android, cusmedroid developer, developer indonesia, made in indonesia, website, php, html, css, js, xml, java, api, apikey, mysqli, phpmyadmin, android studio, android-studio, Suryo DwiJayanto, suryodwijayanto, portfolio, cv, curriculum vitae, profil, biography'/>
+        <meta name='author' content='CusMeDroid'>
+        <link rel='stylesheet' type='text/css' href='https://cusmedroid.github.io/css/style.css'>
+        <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong'>
+        <link rel='stylesheet' href='https://cusmedroid.github.io/fontawesome-4/css/font-awesome.min.css'>
+        <script type='text/javascript' src='https://cusmedroid.github.io/js/jquery-3.6.0.min.js'></script>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src='https://www.googletagmanager.com/gtag/js?id=G-XH5ZCJD408'></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-XH5ZCJD408');
+        </script>
+    </head>
+    <body id='myCopyright'>
+        <div class='sidebar Trirong'>
+                <a title='HTML' href='../html'>HTML</a>
+                <a title='CSS' href='../css'>CSS</a>
+                <a title='JS' class='sdactive' href=''>JS</a>
+                <a title='Audio' href='../audio'>Audio</a>
+                <a title='Video' href='../video'>Video</a>
+            </div>
+        <button class='collapsible aclp Trirong'><b>Menu</b></button>
+        <div class='clp-content-mobile Trirong'>
+            <a title='HTML' href='../html'>HTML</a>
+            <a title='CSS' href='../css'>CSS</a>
+            <a title='JS' class='sdactive' href=''>JS</a>
+            <a title='Audio' href='../audio'>Audio</a>
+            <a title='Video' href='../video'>Video</a>
+        </div>
+
+        <div class='docs-content'>
+            <div class='padd-16'>
+                <h1 class='Audiowide animate-left'>JS</h1>
+                <p class='Trirong patobo animate-right'>JavaScript or js is an interpreter-type programming language, so you don't need a compiler to run it. JavaScript has features such as object-oriented, client-side, high-level programming, and loosely typed.<br>Example text javascript by id in html/js.
+                Below is an example code :
+                </p>
+                <pre onclick='myAds1()' class='Trirong padd-10 mybasebg animate-left black'>
+<span><</span>!DOCTYPE html>
+<span><</span>html>
+    <span><</span>head>
+        <span><</span>!-- Your title web -->
+        <span><</span>title>Guide JS | CusMeDroid<span><</span>title>
+    <span><</span>/head>
+    <span><</span>body>
+        <span><</span>p id='meexample'><span><</span>/p>
+        <span><</span>script>
+            document.getElementById('meexample').innerHTML = 'You can see me?';
+        <span><</span>/script>
+    <span><</span>/body>
+<span><</span>/html>
+                </pre>
+                <p class='Trirong patobo animate-right'>How to make function onclick for change text?<br>
+                Below is an example code :</p>
+                <pre onclick='myAds2()' class='Trirong padd-10 mybasebg animate-left black'>
+<span><</span>!DOCTYPE html>
+<span><</span>html>
+    <span><</span>head>
+        <span><</span>!-- Your title web -->
+        <span><</span>title>Guide JS | CusMeDroid<span><</span>title>
+    <span><</span>/head>
+    <span><</span>body>
+        <span><</span>p id='meexample'>You can see me?<span><</span>/p>
+        <span><</span>button onclick='meTextChagne()'>Change it!<span><</span>/button>
+        <span><</span>script>
+            function meTextChange() {
+                document.getElementById('meexample').innerHTML = 'Has it changed?';
+            }
+        <span><</span>/script>
+    <span><</span>/body>
+<span><</span>/html>
+                </pre>
+
+                <div class='home-bottom martobo Trirong size-18'>
+                    <cusmedroid></cusmedroid>
+                    <!--<a title='Docs' class='home-btn' href='../docs'><span>&#8592;</span> Docs</a>-->
+                    <a title='JS Level Up #1' class='home-btn' href='lvl_one.html'>Lvl Up #1 <span>&#8594;</span></a>
+                </div>
+            </div>
+
+            <footer class='orange-bg'>
+                <h1 class='padd-8 Audiowide animate-left'>Powered by</h1>
+                <p class='Trirong animate-right'>&copy; <script>document.write(new Date().getFullYear())</script> - <a class='white' alt='CusMeDroid' title='CusMeDroid' href='https://cusmedroid.github.io'><b>CusMeDroid</b></a></p>
+            </footer>
+        </div>
+
+        <script type='text/javascript'>
+            var coll = document.getElementsByClassName('collapsible');
+            var clp;
+
+            for (clp = 0; clp < coll.length; clp++) {
+              coll[clp].addEventListener('click', function() {
+                this.classList.toggle('clpactive');
+                var content = this.nextElementSibling;
+                if (content.style.maxHeight){
+                  content.style.maxHeight = null;
+                } else {
+                  content.style.maxHeight = content.scrollHeight + 'px';
+                } 
+              });
+            }
+            function myAds1() {
+                window.open('http://j.gs/2428724/ads01');
+            }
+            function myAds2() {
+                window.open('http://j.gs/2428724/ads02');
+            }
+        </script>
+        
+        <script type='text/javascript' src='https://cusmedroid.github.io/js/disclaimer.js'></script>
+    </body>
+</html>
