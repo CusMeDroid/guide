@@ -128,26 +128,7 @@
             </footer>
         </div>
 
-        <script type='text/javascript'>
-            var coll = document.getElementsByClassName('collapsible');
-            var clp;
-
-            for (clp = 0; clp < coll.length; clp++) {
-              coll[clp].addEventListener('click', function() {
-                this.classList.toggle('clpactive');
-                var content = this.nextElementSibling;
-                if (content.style.maxHeight){
-                  content.style.maxHeight = null;
-                } else {
-                  content.style.maxHeight = content.scrollHeight + 'px';
-                } 
-              });
-            }
-            function myAds() {
-                window.open('http://j.gs/2428724/ads01');
-            }
-        </script>
-        
+        <script type='text/javascript' src='../../js/collapse.js'></script>
         <script type='text/javascript' src='../../js/disclaimer.js'></script>
     </body>
 </html>
